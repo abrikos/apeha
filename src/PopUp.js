@@ -2,7 +2,8 @@ import "./PopUp.sass"
 import InputBox from "./InputBox";
 
 export default function PopUp() {
-    return <div className="popup">
+    return <div className="popup-wrap">
+        <div className="popup">
         <div className="d-flex">
             <img src="https://kovcheg.apeha.ru/i/registration/left_top_corner.png"/>
             <img src="https://kovcheg.apeha.ru/i/registration/top_middle.png"/>
@@ -12,15 +13,25 @@ export default function PopUp() {
             <img src="https://kovcheg.apeha.ru/i/registration/left_middle.png"/>
             <div className="popup-content">
                 <strong className="d-block text-center">Дата рождения</strong>
-                <div className="d-flex">
+                <div className="d-flex justify-content-around">
                     <InputBox><select>
                         <option>День</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>...</option>
                     </select></InputBox>
                     <InputBox><select>
                         <option>Месяц</option>
+                        <option>Январь</option>
+                        <option>Февраль</option>
+                        <option>...</option>
                     </select></InputBox>
                     <InputBox><select>
                         <option>Год</option>
+                        <option>1940</option>
+                        <option>1941</option>
+                        <option>1942</option>
+                        <option>...</option>
                     </select></InputBox>
                 </div>
 
@@ -46,6 +57,6 @@ export default function PopUp() {
             <img src="https://kovcheg.apeha.ru/i/registration/bottom_middle.png"/>
             <img src="https://kovcheg.apeha.ru/i/registration/bottom_right_corner.png"/>
         </div>
-
+        </div>
     </div>
 }

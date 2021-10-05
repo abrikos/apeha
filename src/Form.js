@@ -1,8 +1,11 @@
 import InputBox from "./InputBox";
 import "./Form.sass"
 import PopUp from "./PopUp";
+import {useState} from "react";
 
 export default function Form() {
+    const [showPopup, setShowPopup] = useState(false)
+
     const labels = {
         nick: 'https://kovcheg.apeha.ru/i/registration/nick.png',
         email: 'https://kovcheg.apeha.ru/i/registration/email.png',
@@ -36,8 +39,21 @@ export default function Form() {
                 <input type="radio" name="sex"/> Женский
             </div>
         </div>
+        <strong className="d-block text-center pointer" onClick={() => setShowPopup(!showPopup)}><u>Дополнительные параметры</u></strong>
+        {showPopup && <PopUp/>}
+        <strong className="d-block my-5 text-center">
+            <input type="checkbox"/> Принимаю условия лицензионного соглашения <a href="https://kovcheg.apeha.ru/licence.htm" target="_blank">(Читать в новом
+            окне)</a>
+        </strong>
 
-        <PopUp/>
-
+        <div className="d-flex justify-content-center">
+            <div className="button pointer" onClick={()=>alert('TODO: Registration ')}>
+                <div className="button_left"></div>
+                <div className="button_middle">
+                    OK
+                </div>
+                <div className="button_right"></div>
+            </div>
+        </div>
     </div>
 }
