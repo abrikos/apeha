@@ -1,13 +1,23 @@
 .popup-wrap
-  position: relative
+  img
+    display: none
+    @media only screen and (min-width: 670px)
+      display: inline
+  @media only screen and (min-width: 670px)
+    position: relative
   .popup
-    position: absolute
-    top: -40px
-    left: 300px
+    @media only screen and (min-width: 670px)
+      position: absolute
+      top: -40px
+      left: 300px
     select
       background: none
       border: none
       width: 100%
     .popup-content
-      background-image: url(https://kovcheg.apeha.ru/i/registration/middle_scrol.jpg)
-      width: 352px
+      @media only screen and (max-width: 670px)
+        border: 2px solid yellow
+        padding: 10px
+      @media only screen and (min-width: 670px)
+        background-image: url(https://kovcheg.apeha.ru/i/registration/middle_scrol.jpg)
+        width: 352px

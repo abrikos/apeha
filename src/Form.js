@@ -14,7 +14,7 @@ export default function Form() {
     }
 
     return <div className="registration-form">
-        <img src="https://kovcheg.apeha.ru/i/registration/top_img_reg.png"/>
+        <img className="logo" src="https://kovcheg.apeha.ru/i/registration/top_img_reg.png"/>
         <div className="text-center m-2">
             <strong className="d-block m-2">Зарегистрироваться с помощью:</strong>
             <a href="user_add_1_soc_1.html"><img src="https://kovcheg.apeha.ru/i/vk.png"/></a>&nbsp;
