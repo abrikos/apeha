@@ -1,22 +1,21 @@
-import "./InputCustom.sass"
+import "./InputBox.sass"
 
-export default function InputCustom(props){
-    const labels ={
-        nick:'https://kovcheg.apeha.ru/i/registration/nick.png',
-    }
+export default function InputBox(props){
 
-    return <div className="input-custom">
-        <div className="row top" >
+    return <div className="input-box">
+        <div className="input-row top" >
             <div className="left"></div>
             <div className="center"></div>
             <div className="right"></div>
         </div>
-        <div className="row middle" >
+        <div className="input-row middle" >
             <div className="left"></div>
-            <div className="center"  id={props.name}>zsss</div>
+            <div className="center">
+                {props.children}
+            </div>
             <div className="right"></div>
         </div>
-        <div className="row bottom">
+        <div className="input-row bottom">
             <div className="left"></div>
             <div className="center"></div>
             <div className="right"></div>

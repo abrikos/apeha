@@ -1,4 +1,7 @@
 html, body
+  font-family: Verdana,Arial,Helvetica,Tahoma,sans-serif
+  font-size: 12px
+  color: black
   margin: 0
   min-height: 100% !important
   height: 100%
@@ -61,15 +64,18 @@ html, body
       margin: 0 0 0 7px
       background: url(https://kovcheg.apeha.ru/i/middle_list.jpg)
       .content
+        height: 100%
         display: flex
+        img.panel
+          width: 100%
         //width: 100%
       .ornament-middle-left
         background-repeat: repeat-y
         background-position: bottom left -10px
-        width: 46px
+        min-width: 46px
         background-image: url(https://kovcheg.apeha.ru/i/left_list_middle.png)
       .ornament-middle-right
         background-repeat: repeat-y
         background-position: bottom right
-        width: 46px
+        min-width: 46px
         background-image: url(https://kovcheg.apeha.ru/i/right_list_middle.png)

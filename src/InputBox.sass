@@ -1,10 +1,10 @@
-.input-custom
-  margin: auto
-  width: 80%
+.input-box
+  //margin: 12px auto
   //height: 50px
+  max-width: 380px
   background-image: url(https://kovcheg.apeha.ru/i/middle_middle_area.png)
 
-  .row
+  .input-row
     display: flex
     justify-content: space-between
     .left
@@ -34,7 +34,19 @@
       background-repeat: repeat-y
       background-image: url(https://kovcheg.apeha.ru/i/right_middle_area.png)
     .center
-      background-image: url(https://kovcheg.apeha.ru/i/top_middle_area.png)
+      min-height: 20px
+      text-align: center
+      input
+        display: none
+    .center:hover
+      img
+        display: none
+      input
+        height: 18px
+        margin: 0 auto
+        //width: 100%
+        display: block
+        background: none
   .bottom
     .left
       background-image: url(https://kovcheg.apeha.ru/i/bot_left_area.png)
@@ -44,8 +56,3 @@
       background-image: url(https://kovcheg.apeha.ru/i/bot_middle_area.png)
 
 
-  #nick
-    background-repeat: no-repeat
-    background-position: center
-    min-height: 100%
-    background-image: url(https://kovcheg.apeha.ru/i/registration/nick.png)

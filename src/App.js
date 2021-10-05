@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './app.sass';
-//import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/css/bootstrap.css"
 import Form from "./Form";
 
 function App() {
@@ -15,9 +15,9 @@ function App() {
                 <div className="middle-row">
                     <div className="ornament-middle-left">&nbsp;</div>
                     <div className="content">
-                        <div><img src="https://kovcheg.apeha.ru/i/registration/left_img_reg.png" alt="left panel"/> </div>
+                        <div><img className="panel" src="https://kovcheg.apeha.ru/i/registration/left_img_reg.png" alt="left panel"/> </div>
                         <Form/>
-                        <div><img src="https://kovcheg.apeha.ru/i/registration/right_img_reg.png" alt="right panel"/> </div>
+                        <div><img  className="panel" src="https://kovcheg.apeha.ru/i/registration/right_img_reg.png" alt="right panel"/> </div>
                         <div></div>
                     </div>
                     <div className="ornament-middle-right">&nbsp;</div>
