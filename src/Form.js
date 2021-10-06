@@ -7,18 +7,18 @@ export default function Form() {
     const [showPopup, setShowPopup] = useState(false)
 
     const labels = {
-        nick: 'https://kovcheg.apeha.ru/i/registration/nick.png',
-        email: 'https://kovcheg.apeha.ru/i/registration/email.png',
-        password: 'https://kovcheg.apeha.ru/i/registration/pass.png',
-        password2: 'https://kovcheg.apeha.ru/i/registration/pass2.png',
+        nick: '/images/nick.png',
+        email: '/images/email.png',
+        password: '/images/pass.png',
+        password2: '/images/pass2.png',
     }
 
     return <div className="registration-form">
-        <img className="logo" src="https://kovcheg.apeha.ru/i/registration/top_img_reg.png"/>
+        <img className="logo" src="/images/top_img_reg.png"/>
         <div className="text-center m-2">
             <strong className="d-block m-2">Зарегистрироваться с помощью:</strong>
-            <a href="user_add_1_soc_1.html"><img src="https://kovcheg.apeha.ru/i/vk.png"/></a>&nbsp;
-            <a href="user_add_1_soc_4.html"><img src="https://kovcheg.apeha.ru/i/ok.png"/></a>&nbsp;
+            <a href="user_add_1_soc_1.html"><img src="/images/vk.png"/></a>&nbsp;
+            <a href="user_add_1_soc_4.html"><img src="/images/ok.png"/></a>&nbsp;
         </div>
 
 

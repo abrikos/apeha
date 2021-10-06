@@ -5,12 +5,12 @@ export default function PopUp() {
     return <div className="popup-wrap">
         <div className="popup">
         <div className="d-flex">
-            <img src="https://kovcheg.apeha.ru/i/registration/left_top_corner.png"/>
-            <img src="https://kovcheg.apeha.ru/i/registration/top_middle.png"/>
-            <img src="https://kovcheg.apeha.ru/i/registration/right_top_corner.png"/>
+            <img src="/images/left_top_corner.png"/>
+            <img src="/images/top_middle.png"/>
+            <img src="/images/right_top_corner.png"/>
         </div>
         <div className="d-flex">
-            <img src="https://kovcheg.apeha.ru/i/registration/left_middle.png"/>
+            <img src="/images/left_middle.png"/>
             <div className="popup-content">
                 <strong className="d-block text-center">Дата рождения</strong>
                 <div className="d-flex justify-content-around">
@@ -50,12 +50,12 @@ export default function PopUp() {
                 <i>Улучшенный дизайн рекомендован для обладателей
                     19-ти дюймовых мониторов и больше</i>
             </div>
-            <img src="https://kovcheg.apeha.ru/i/registration/right_middle.png"/>
+            <img src="/images/right_middle.png"/>
         </div>
         <div className="d-flex">
-            <img src="https://kovcheg.apeha.ru/i/registration/left_bottom_corner.png"/>
-            <img src="https://kovcheg.apeha.ru/i/registration/bottom_middle.png"/>
-            <img src="https://kovcheg.apeha.ru/i/registration/bottom_right_corner.png"/>
+            <img src="/images/left_bottom_corner.png"/>
+            <img src="/images/bottom_middle.png"/>
+            <img src="/images/bottom_right_corner.png"/>
         </div>
         </div>
     </div>
