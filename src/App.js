@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './app.sass';
 import "bootstrap/dist/css/bootstrap.css"
 import Form from "./Form";
