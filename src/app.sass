@@ -71,8 +71,12 @@ html, body
       @media only screen and (min-width: 670px)
         margin: 0 0 0 7px
       background: url('images/middle_list.jpg')
+      //Safari & Chrome
+      .content::-webkit-scrollbar
+        display: none
       .content
         overflow-y: scroll
+        scrollbar-width: none //Firefox
         height: 100%
         display: flex
         img.panel
